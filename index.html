@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Quiz</title>
+   <!-- <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script> -->
+   <link rel="stylesheet" href="style.css">
+   <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <div class="container">
+        <div id="logo">
+            <img height="50" width="150" src="./assets/Logos/L__Logo White.png" alt="">
+        </div>
+
+        <div id="starter">
+            <div>
+                <p id="what">
+                    What is your Traveler Tribe?
+                </p><br>
+                <p id="ans">Answer just a few questions to find out which Traveler Tribe fits your travel style and attitudes to life.</p>
+            </div>
+            <div style="width: 500px;">
+                <label for="name">Name:</label>
+                <input type="text" name="" id="name" placeholder="Enter your name">
+            </div>
+            <button class="btn btn-option" onclick="starter()">
+                Start Survey
+            </button>
+        </div>
+        
+        <main id="main" style="display: none;">
+        <div id="q1" style="display: flex;">
+        <div id="left">
+            <div class="question"  id="question-area">
+                <div id="question-text"></div>
+                     <!-- checkboxes  -->
+                    <div id="options">
+                        <!-- <div class="animate__flash longer"  id="option1"></div>
+                        <div class="animate__flash longer"  id="option2"></div>
+                        <div class="animate__flash longer"  id="option3"></div>
+                        <div class="animate__flash longer"   id="option4"></div> -->
+                    </div>
+            </div>
+            <div class="controls">
+                <button onclick="next2()" class="btn btn-next" id="next">Next</button>
+                <button class="btn btn-submit" style="display: none;" id="submit">Done</button>
+            </div>
+        </div>
+    </div>
+
+        <div id="right">
+        </div>
+
+        <div style="display: none;" id="grats">
+            <p id="grats1"></p>
+            <button class="btn btn-next" onclick="refresh()">
+                Restart
+            </button>
+        </div>
+        </main>
+        
+    </div>
+
+   <script src="index.js"></script>
+</body>
+</html>

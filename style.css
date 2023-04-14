@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+ }
+
+
+body {
+    background-color: rgba(0,0,0,0.75);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#logo{
+    top: 0%;
+    left: 0%;
+}
+
+
+.container {
+    width: 100vw;
+    max-width: 95%;
+    background-color: #005eb8;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 8px;
+    text-align: center;
+ }
+
+ #what{
+    font-size: 3em;
+ }
+
+ #ans{
+    font-size: 1.4em;
+ }
+
+ p{
+    color: white; 
+    font-weight: bold;
+ }
+
+ #main{
+    display: flex;
+    flex-direction: row;
+    width: 95vw;
+    height: 88vh;
+ }
+
+ #starter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    max-width: 100%;
+    height: 88vh;
+ }
+
+ label{
+    color: white; 
+    font-size: xx-large;
+    font-weight: bold;
+    /* margin-right: 5%; */
+ }
+
+ input{
+    margin-left: 3%;
+    padding-left: 5px;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 4px;
+    width: 320px;
+    height: 36px;
+    font-size: xx-large;
+    color: white;
+ }
+
+ input::placeholder{
+    color: rgba(255, 255, 255, 0.733);
+ }
+
+ #left, #right{
+    width: 47.5vw;
+ }
+
+ .btn {
+    font-size: xx-large;
+    font-weight: bold;
+    border: none;
+    background: #00ab66;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: beige;
+    /* margin: 6px; */
+    cursor: pointer;
+    width: 250px;
+ }
+
+
+ #options {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    order: 3;
+ }
+
+ #sel{
+    height: 25px;
+    background-color: #1a6ebf;
+    text-align: left;
+    border: 1px solid white;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+ }
+ 
+ .controls {
+    padding: 10px;
+    order: 4;
+ }
+ 
+.hide {
+    display: none;
+ }
+
+ #right{
+    background-image: url('https://images.typeform.com/images/pcfXCApgxFPY/image/default-firstframe.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+
+ #question-area{
+    margin: 1%;
+ }
+
+ #option{
+    color: white; 
+    font-size: large;
+    font-weight: bold;
+    text-align: left;
+ }
+
+ #question-text{
+    color: white;
+    text-align: justify;
+    margin-left: 3%;
+    font-size: large;
+    font-weight: bold;
+ }
+
+ #grats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: xxx-large;
+    font-weight: bold;
+ }
+
+ #sel{
+    cursor: pointer;
+    /* -webkit-tap-highlight-color: green; */
+ }
+
+ #sel:active{
+    background-color: green;
+    border: 2px solid white
+ }
+
